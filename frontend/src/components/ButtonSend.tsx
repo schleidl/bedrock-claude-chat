@@ -14,9 +14,9 @@ const ButtonSend: React.FC<Props> = (props) => {
     <button
       className={twMerge(
         'flex items-center justify-center rounded-xl p-2 text-xl',
-        'bg-aws-sea-blue-light text-white hover:bg-aws-sea-blue-hover-light',
-        'dark:bg-aws-sea-blue-dark dark:hover:bg-aws-sea-blue-hover-dark',
-        props.disabled ? 'opacity-30' : '',
+        'bg-aws-orange-light text-white hover:bg-aws-orange-hover-light',
+        'dark:bg-aws-orange-light dark:hover:bg-aws-orange-hover-light',
+        props.disabled ? 'opacity-50' : '',
         props.className
       )}
       onClick={props.onClick}

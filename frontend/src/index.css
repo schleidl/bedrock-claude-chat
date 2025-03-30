@@ -2,11 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* tailwindの設定で上書きされてしまうので、importantを設定する */
+@font-face {
+  font-family: 'Amazon Ember';
+  src: url('https://m.media-amazon.com/images/G/01/AmazonMusic/fontcss/AmazonEmber_W_Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amazon Ember';
+  src: url('https://m.media-amazon.com/images/G/01/AmazonMusic/fontcss/AmazonEmber_W_Bd.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Amazon Ember', Arial, sans-serif;
+}
+
+/* AWS styling for Amplify components */
 .amplify-button--primary {
-  background-color: var(
-    --amplify-components-button-primary-background-color
-  ) !important;
+  background-color: #FF9900 !important;
+  border-color: #FF9900 !important;
+}
+
+.amplify-button--primary:hover {
+  background-color: #EC7211 !important;
+  border-color: #EC7211 !important;
+}
+
+.amplify-tabs {
+  --amplify-components-tabs-item-active-color: #FF9900 !important;
+  --amplify-components-tabs-item-active-border-color: #FF9900 !important;
+  --amplify-components-tabs-item-hover-color: #EC7211 !important;
+}
+
+.amplify-input:focus {
+  border-color: #FF9900 !important;
+  box-shadow: 0 0 0 2px rgba(255, 153, 0, 0.2) !important;
 }
 
 /* Forcing line breaks in code blocks */

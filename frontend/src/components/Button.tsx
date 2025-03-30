@@ -19,13 +19,13 @@ const Button = forwardRef<HTMLButtonElement, Props>((props, ref) => {
     <button
       ref={ref}
       className={twMerge(
-        'flex items-center justify-center whitespace-nowrap rounded-lg border p-1 px-3',
-        props.text && 'border-0 dark:text-aws-font-color-dark',
-        props.outlined && 'border-aws-squid-ink-light/50 dark:border-aws-font-color-gray/50 hover:bg-white dark:hover:bg-aws-ui-color-dark dark:text-aws-font-color-dark',
+        'flex items-center justify-center whitespace-nowrap rounded-md border p-2 px-4 font-medium',
+        props.text && 'border-0 text-aws-sea-blue-light dark:text-aws-sea-blue-light hover:underline',
+        props.outlined && 'border-aws-squid-ink-light/50 dark:border-aws-font-color-gray/50 hover:bg-white dark:hover:bg-aws-ui-color-dark dark:text-aws-font-color-white-dark',
         !props.text &&
           !props.outlined &&
-          'bg-aws-sea-blue-light dark:bg-aws-ui-color-dark dark:border-aws-ui-color-dark text-aws-font-color-white-light dark:text-aws-font-color-white-dark',
-        props.disabled || props.loading ? 'opacity-30' : 'hover:brightness-75',
+          'bg-aws-orange-light dark:bg-aws-orange-light border-aws-orange-light dark:border-aws-orange-light text-aws-font-color-white-light dark:text-aws-font-color-white-dark',
+        props.disabled || props.loading ? 'opacity-50' : 'hover:bg-aws-orange-hover-light dark:hover:bg-aws-orange-hover-light',
         props.className
       )}
       onClick={(e) => {

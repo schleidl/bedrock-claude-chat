@@ -4,7 +4,7 @@ export default {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      body: ['M PLUS Rounded 1c'],
+      body: ['Amazon Ember', 'Arial', 'sans-serif'],
     },
     extend: {
       transitionProperty: {
@@ -16,36 +16,44 @@ export default {
       },
       colors: {
         'aws-squid-ink': {
-          light: '#232F3E',
+          light: '#232F3E', // AWS dark blue/navy
           dark: '#171717',
         },
         'aws-sea-blue': {
-          light: '#005276',
-          dark: '#757575',
+          light: '#0073BB', // AWS blue
+          dark: '#0073BB',
         },
         'aws-sea-blue-hover': {
-          light: '#003550',
-          dark: '#5b5b5b',
+          light: '#005A93', // Darker AWS blue for hover
+          dark: '#005A93',
         },
-        'aws-aqua': '#007faa',
+        'aws-orange': {
+          light: '#FF9900', // AWS orange
+          dark: '#FF9900',
+        },
+        'aws-orange-hover': {
+          light: '#EC7211', // Darker AWS orange for hover
+          dark: '#EC7211',
+        },
+        'aws-aqua': '#00A1C9', // AWS teal/aqua
         'aws-lab': '#38ef7d',
         'aws-mist': '#9ffcea',
         'aws-font-color': {
-          light: '#232F3E',
-          dark: '#cacaca',
-          gray: '#909193',
-          blue: '#276cc6',
+          light: '#232F3E', // AWS dark blue/navy
+          dark: '#FFFFFF',
+          gray: '#879596', // AWS gray
+          blue: '#0073BB', // AWS blue
         },
         'aws-font-color-white': {
-          light: '#ffffff',
-          dark:'#ececec',
+          light: '#FFFFFF',
+          dark: '#FFFFFF',
         },
         'aws-ui-color': {
-          dark: '#151515',
+          dark: '#161E2D', // AWS dark background
         },
         'aws-paper': {
-          light: '#f1f3f3',
-          dark: '#212121',
+          light: '#F2F3F3', // AWS light background
+          dark: '#161E2D',
         },
         red: '#dc2626',
         'light-red': '#fee2e2',

@@ -41,7 +41,7 @@ const Select: React.FC<Props> = (props) => {
         <div className={twMerge('relative')}>
           <Listbox.Button
             className={twMerge(
-              'relative h-9 w-full cursor-default rounded border border-aws-font-color-light/50 dark:border-aws-font-color-dark/50 py-1 pl-3 pr-10 text-left dark:text-aws-font-color-dark focus:outline-none',
+              'relative h-9 w-full cursor-default rounded-md border border-aws-font-color-light/50 dark:border-aws-font-color-dark/50 py-1 pl-3 pr-10 text-left dark:text-aws-font-color-dark focus:outline-none focus:border-aws-orange-light focus:ring-1 focus:ring-aws-orange-light/30',
               !props.disabled && 'bg-white dark:bg-aws-ui-color-dark'
             )}>
             <span className="block truncate">{selectedLabel}</span>
@@ -69,7 +69,7 @@ const Select: React.FC<Props> = (props) => {
                   className={({ active }) =>
                     `relative cursor-default select-none py-2 pl-10 pr-4 ${
                       active
-                        ? 'bg-aws-smile/10 text-aws-smile dark:bg-aws-font-color-dark/10 dark:text-aws-font-color-dark'
+                        ? 'bg-aws-orange-light/10 text-aws-orange-light dark:bg-aws-orange-light/10 dark:text-aws-orange-light'
                         : 'text-aws-font-color-light dark:text-aws-font-color-dark'
                     }`
                   }
